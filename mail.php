@@ -1,20 +1,20 @@
 <?php
 	require 'PHPMailer/PHPMailerAutoload.php';
 	// enter your credentials
-	$email = "someone@example.com";
-	$password = "somepassword";
+	$email = "example@gmail.com";
+	$password = "passwword";
 	// initialize the object
 	$mail = new PHPMailer;
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
-	$mail->Port = 465;
-	$mail->SMTPSecure = 'ssl';
+	$mail->Port = 587;
+	$mail->SMTPSecure = '';
 	$mail->SMTPAuth = true;
 	$mail->CharSet = "UTF-8";
 	$mail->Username = $email;
 	$mail->Password = $password;
 	// enter your name to be shown
-	$mail->FromName = "someone";
+	$mail->FromName = "SomeOne";
 	$mail->From = $email;
 
 	// csv input
